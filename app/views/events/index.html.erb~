@@ -1,4 +1,4 @@
-<p><h1>Event Listings</h1></p>
+<% title "Events" %>
 
 <table>
   <tr>
