@@ -1,0 +1,64 @@
+<% title "Event" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @event.address %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @event.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @event.state %>
+</p>
+<p>
+  <strong>Latitude:</strong>
+  <%= @event.latitude %>
+</p>
+<p>
+  <strong>Longitude:</strong>
+  <%= @event.longitude %>
+</p>
+<p>
+  <strong>Start:</strong>
+  <%= @event.start %>
+</p>
+<p>
+  <strong>End:</strong>
+  <%= @event.end %>
+</p>
+<p>
+  <strong>Details:</strong>
+  <%= @event.details %>
+</p>
+<p>
+  <strong>Contact Details:</strong>
+  <%= @event.contact_details %>
+</p>
+<p>
+  <strong>Photo:</strong>
+  <%= @event.photo %>
+</p>
+<p>
+  <strong>Organzation Id:</strong>
+  <%= @event.organzation_ID %>
+</p>
+<p>
+  <strong>Volunteers:</strong>
+  <%= @event.volunteers %>
+</p>
+<p>
+  <strong>Website:</strong>
+  <%= @event.website %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_event_path(@event) %> |
+  <%= link_to "Destroy", @event, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", events_path %>
+</p>

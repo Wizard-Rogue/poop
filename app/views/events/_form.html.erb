@@ -1,0 +1,60 @@
+<%= form_for @event do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </p>
+  <p>
+    <%= f.label :end %><br />
+    <%= f.datetime_select :end %>
+  </p>
+  <p>
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </p>
+  <p>
+    <%= f.label :contact_details %><br />
+    <%= f.text_area :contact_details %>
+  </p>
+  <p>
+    <%= f.label :photo %><br />
+    <%= f.text_field :photo %>
+  </p>
+  <p>
+    <%= f.label :organzation_ID %><br />
+    <%= f.number_field :organzation_ID %>
+  </p>
+  <p>
+    <%= f.label :volunteers %><br />
+    <%= f.number_field :volunteers %>
+  </p>
+  <p>
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

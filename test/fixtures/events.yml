@@ -1,0 +1,31 @@
+one:
+  title: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  latitude: 1.5
+  longitude: 1.5
+  start: 2012-04-25 16:17:34
+  end: 2012-04-25 16:17:34
+  details: MyText
+  contact_details: MyText
+  photo: MyString
+  organzation_ID: 1
+  volunteers: 1
+  website: MyString
+
+two:
+  title: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  latitude: 1.5
+  longitude: 1.5
+  start: 2012-04-25 16:17:34
+  end: 2012-04-25 16:17:34
+  details: MyText
+  contact_details: MyText
+  photo: MyString
+  organzation_ID: 1
+  volunteers: 1
+  website: MyString

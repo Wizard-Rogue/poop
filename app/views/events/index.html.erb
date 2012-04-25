@@ -1,0 +1,43 @@
+<% title "Events" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Details</th>
+    <th>Contact Details</th>
+    <th>Photo</th>
+    <th>Organzation Id</th>
+    <th>Volunteers</th>
+    <th>Website</th>
+  </tr>
+  <% for event in @events %>
+    <tr>
+      <td><%= event.title %></td>
+      <td><%= event.address %></td>
+      <td><%= event.city %></td>
+      <td><%= event.state %></td>
+      <td><%= event.latitude %></td>
+      <td><%= event.longitude %></td>
+      <td><%= event.start %></td>
+      <td><%= event.end %></td>
+      <td><%= event.details %></td>
+      <td><%= event.contact_details %></td>
+      <td><%= event.photo %></td>
+      <td><%= event.organzation_ID %></td>
+      <td><%= event.volunteers %></td>
+      <td><%= event.website %></td>
+      <td><%= link_to "Show", event %></td>
+      <td><%= link_to "Edit", edit_event_path(event) %></td>
+      <td><%= link_to "Destroy", event, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Event", new_event_path %></p>
